@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture Controlled Attraction Interface | TEA @ UCSD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white shadow-lg fixed w-full z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <a href="../index.html" class="flex items-center space-x-2">
+                    <img src="../assests/tea_logo.png" alt="TEA Logo" class="h-6 w-12">
+                    <span class="font-semibold text-xl">TEA at UCSD</span>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="../index.html#home" class="hover:text-yellow-400 transition-all">Home</a>
+                <a href="../index.html#about" class="hover:text-yellow-400 transition-all">About</a>
+                <a href="../index.html#projects" class="hover:text-yellow-400 transition-all">Projects</a>
+                <a href="../index.html#team" class="hover:text-yellow-400 transition-all">Board</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white pt-32 pb-20 text-center">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Gesture Controlled Attraction Interface</h1>
+            <p class="text-lg max-w-2xl mx-auto">An innovative project exploring touchless control for dynamic themed entertainment experiences using machine learning.</p>
+        </div>
+    </section>
+
+    <!-- Project Description -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="mb-10 text-center">
+                <h2 class="text-3xl font-bold text-blue-900 mb-4">Project Overview</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div>
+                <p class="text-gray-700 text-lg">Using Raspberry Pi technology and lightweight machine learning models, 
+                    this project introduces gesture-based interactions for attractions. 
+                    Visitors control elements of the experience with simple hand motions, enhancing accessibility and immersion without physical contact.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 mt-12">
+                <div>
+                    <img src="../assests/GEST.png" alt="Gesture Control Image" class="rounded-lg shadow-lg">
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-blue-900 mb-4">Key Features</h3>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2">
+                        <li>Real-time gesture detection using camera input</li>
+                        <li>Machine learning model trained for fast, efficient recognition</li>
+                        <li>Intuitive controls for lighting, sound, and animatronic motion</li>
+                        <li>Designed for scalability and easy integration into themed attractions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Projects Button -->
+    <div class="text-center py-10">
+        <a href="../index.html#projects" class="inline-block bg-blue-900 text-white hover:bg-blue-700 font-bold px-6 py-3 rounded-full transition-all">
+            ← Back to Home
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-6">
+        <p class="text-sm">&copy; 2025 TEA @ UCSD. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
