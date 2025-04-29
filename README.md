@@ -12,4 +12,4 @@ This repository is contians of the source code for the Themed Entertainment Asso
 
 
 ## Deploying
-
+This site is configured to automatically deploy from the `master` branch. After pushing/merging a change to master it will take 1-5 minutes to deploy to the public facing site. 
