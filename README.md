@@ -1,5 +1,5 @@
 # 🎢 Themed Entertianment at UC San Diego Website 🌊
-Link to site: https://bit.ly/teaatucsd
+Link to site: https://bit.ly/teaatucsd  
 Specific link to gesture control page: https://bit.ly/teaforce
 
 This repository is contians of the source code for the Themed Entertainment Assoistation at UC San Diego website that is hosted via GitHub pages and link is configured via [bitly](https://app.bitly.com) to shorten and simplify the link.
