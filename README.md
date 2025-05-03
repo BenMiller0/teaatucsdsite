@@ -7,7 +7,19 @@ This repository is contians of the source code for the Themed Entertainment Asso
 # Documentation
 
 ## Site Layout
-
+fix this I coppied this from another project - ben
+src/
+├── content/              # Content and data
+│   ├── components/      # Reusable content components
+│   ├── data/           # Site-wide data files
+│   └── pages/          # Main site pages (.njk templates)
+├── layouts/             # Page templates
+│   └── base.njk        # Base layout template
+└── assets/            # Static assets
+    ├── js/           # JavaScript modules
+    ├── scss/         # SASS stylesheets
+    ├── images/       # Site images
+    └── favicon/   
 
 ## Editing the site
 
