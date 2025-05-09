@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEA @ UCSD | Themed Entertainment Association</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assests\favcon.png">
 </head>
@@ -15,10 +15,10 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-4">
-                    <img src="assests/tea_logo.png" alt="TEA Logo" class="h-6 w-12">
-                    <span class="font-semibold text-xl">TEA at UCSD</span>
+                    <img src="assests/tea_ucsd_logo.png" alt="TEA Logo" class="h-14 rounded-lg">
+                   <!--<span class="font-semibold text-xl">TEA at UCSD</span>-->
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
+                <div class="hidden md:flex items-center space-x-12">
                     <a href="#home" class="hover:text-yellow-400 transition-all">Home</a>
                     <a href="#about" class="hover:text-yellow-400 transition-all">About</a>
                     <a href="#projects" class="hover:text-yellow-400 transition-all">Projects</a>
@@ -36,8 +36,8 @@
     <section id="home" class="hero-gradient text-white pt-32 pb-20">
         <div class="container mx-auto px-6 text-center">
             <h1 class="text-4xl md:text-5xl font-bold mb-6">Themed Entertainment Association</h1>
-            <p class="text-xl mb-8 max-w-2xl mx-auto">Promoting themed entertainment design and engineering across all disciplines at UC San Diego</p>
-            <a href="#projects" class="inline-block bg-white text-blue-900 hover:bg-gray-100 font-bold px-6 py-3 rounded-full transition-all">View Projects</a>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Uniting themed entertainment enthusiasts to celebrate and create through storytelling, design, and engineering.</p>
+            <a href="#projects" class="inline-block bg-white text-blue-900 hover:bg-yellow-200 font-bold px-6 py-3 rounded-full transition-all">View Projects</a>
         </div>
     </section>
 
@@ -45,12 +45,14 @@
     <section id="about" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">About TEA @ UCSD</h2>
-                <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">About TEA @ UC San Diego</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div> 
+                  <!-- Image inserted Team here -->
+                <img src="assests/board_photos/Group_4.png" alt="TEA UCSD Team" class="mx-auto mb-2 rounded-lg shadow-lg w-full max-w-md">
             </div>
             <div class="max-w-3xl mx-auto text-center">
-                <p class="text-gray-700 mb-6 text-lg">The Themed Entertainment Association at UC San Diego brings together students from all majors to explore the intersection of engineering, design, and storytelling in themed environments.</p>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <p class="text-gray-700 mb-6 text-lg -mt-8">The Themed Entertainment Association at UC San Diego brings together students from all majors to explore the intersection of storytelling, design, and engineering in themed entertainment.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
                     <div>
                         <div class="bg-blue-100 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                             <i class="fas fa-lightbulb text-blue-900 text-2xl"></i>
@@ -110,93 +112,151 @@
     <section id="team" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Meet the board</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Meet the Board</h2>
                 <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
             </div>
             
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 <!-- Team Member 1 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="assests/board_photos/Ben.jpg" alt="Team Member" class="w-full h-64 object-cover">
+                    <img src="assests/board_photos/Ben_2.jpg" alt="Team Member" class="w-full h-64 object-cover">
                     <div class="p-6 text-center">
                         <h3 class="text-xl font-bold text-blue-900 mb-1">Benjamin Miller</h3>
                         <p class="text-yellow-600 font-medium mb-2">Co-President</p>
-                        <p class="text-gray-600 font-medium mb-2">🖥️ Computer Science 🤖</p>
+                        <p class="text-gray-600 font-medium mb-2 whitespace-nowrap">Computer Science</p>
+                        <!-- Email Section -->
+                        <p class="text-sm text-blue-700 flex items-center justify-center gap-1 mt-16">
+                            <a href="mailto:benjaminmiller@ucsd.edu" class="hover:text-yellow-500 transition-all">benjaminmiller@ucsd.edu</a>
+                        </p>
                     </div>
                 </div>
                 
                 <!-- Team Member 2 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="https://via.placeholder.com/300x300" alt="Team Member" class="w-full h-64 object-cover">
+                    <img src="assests/board_photos/Naomika_1.jpg" alt="Team Member" class="w-full h-64 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Person</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Position</p>
-                        <p class="text-green-600 font-medium mb-2">Major</p>
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Naomika Nadkarni</h3>
+                        <p class="text-yellow-600 font-medium mb-2">Co-President</p>
+                        <p class="text-gray-600 font-medium mb-2">Cognitive Science Design</p>
+                        <!-- Email Section -->
+                        <p class="text-sm text-blue-700 flex items-center justify-center gap-1 mt-3">
+                            <a href="mailto:nanadkarni@ucsd.edu" class="hover:text-yellow-500 transition-all">nanadkarni@ucsd.edu</a>
+                        </p>
                     </div>
                 </div>
                 
                 <!-- Team Member 3 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="https://via.placeholder.com/300x300" alt="Team Member" class="w-full h-64 object-cover">
+                    <img src="assests/board_photos/Ryan_2.jpg" alt="Team Member" class="w-full h-64 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Person</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Position</p>
-                        <p class="text-green-600 font-medium mb-2">Major</p>
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Ryan Young</h3>
+                        <p class="text-yellow-600 font-medium mb-2">Vice President</p>
+                        <p class="text-gray-600 font-medium mb-2">Mechanical Engineering</p>
+                        <!-- Email Section -->
+                        <p class="text-sm text-blue-700 flex items-center justify-center gap-1 mt-10">
+                            <a href="mailto:r4young@ucsd.edu" class="hover:text-yellow-500 transition-all">r4young@ucsd.edu</a>
+                        </p>
                     </div>
                 </div>
 
                 <!-- Team Member 4 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="https://via.placeholder.com/300x300" alt="Team Member" class="w-full h-64 object-cover">
+                    <img src="assests/board_photos/Kaitlin_C_1.jpg" alt="Team Member" class="w-full h-64 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Person</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Position</p>
-                        <p class="text-green-600 font-medium mb-2">Major</p>
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Kaitlin Calimbahin</h3>
+                        <p class="text-yellow-600 font-medium mb-2">Technical Director</p>
+                        <p class="text-gray-600 font-medium mb-2">Electrical Engineering</p>
+                        <!-- Email Section -->
+                        <p class="text-sm text-blue-700 flex items-center justify-center gap-1 mt-9">
+                            <a href="mailto:kcalimbahin@ucsd.edu" class="hover:text-yellow-500 transition-all">kcalimbahin@ucsd.edu</a>
+                        </p>
                     </div>
                 </div>
 
                 <!-- Team Member 5 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="https://via.placeholder.com/300x300" alt="Team Member" class="w-full h-64 object-cover">
+                    <img src="assests/board_photos/Kaitlin_B_1.jpg" alt="Team Member" class="w-full h-64 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Person</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Position</p>
-                        <p class="text-green-600 font-medium mb-2">Major</p>
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Kaitlin Bartone</h3>
+                        <p class="text-yellow-600 font-medium mb-2">Marketing and Outreach Director</p>
+                        <p class="text-green-600 font-medium mb-2">Psychology</p>
+                        <!-- Email Section -->
+                        <p class="text-sm text-blue-700 flex items-center justify-center gap-1 mt-9">
+                            <a href="mailto:kbartone@ucsd.edu" class="hover:text-yellow-500 transition-all">kbartone@ucsd.edu</a>
+                        </p>
                     </div>
                 </div>
 
                 <!-- Team Member 6 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="https://via.placeholder.com/300x300" alt="Team Member" class="w-full h-64 object-cover">
+                    <img src="assests/board_photos/Becca_1.jpg" alt="Team Member" class="w-full h-64 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Person</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Position</p>
-                        <p class="text-green-600 font-medium mb-2">Major</p>
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Becca Behl</h3>
+                        <p class="text-yellow-600 font-medium mb-2">Competition Coordinator</p>
+                        <p class="text-green-600 font-medium mb-2">Economics</p>
+                        <!-- Email Section -->
+                        <p class="text-sm text-blue-700 flex items-center justify-center gap-1 mt-9">
+                            <a href="mailto:rbehl@ucsd.edu" class="hover:text-yellow-500 transition-all">rbehl@ucsd.edu</a>
+                        </p>
                     </div>
                 </div>
 
                 <!-- Team Member 7 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="https://via.placeholder.com/300x300" alt="Team Member" class="w-full h-64 object-cover">
+                    <img src="assests/board_photos/Sophia_1.jpg" alt="Team Member" class="w-full h-64 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Person</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Position</p>
-                        <p class="text-green-600 font-medium mb-2">Major</p>
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Sophia Ramirez</h3>
+                        <p class="text-yellow-600 font-medium mb-2">Events Coordinator</p>
+                        <p class="text-green-600 font-medium mb-2">Cognitive Science Design & ICAM</p>
+                        <!-- Email Section -->
+                        <p class="text-sm text-blue-700 flex items-center justify-center gap-1 mt-9">
+                            <a href="mailto:sor003@ucsd.edu" class="hover:text-yellow-500 transition-all">sor003@ucsd.edu</a>
+                        </p>
                     </div>
                 </div>
 
                 <!-- Team Member 8 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="https://via.placeholder.com/300x300" alt="Team Member" class="w-full h-64 object-cover">
+                    <img src="assests/board_photos/Eli_2.jpg" alt="Team Member" class="w-full h-64 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Person</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Position</p>
-                        <p class="text-green-600 font-medium mb-2">Major</p>
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Elisa Correa</h3>
+                        <p class="text-yellow-600 font-medium mb-2">Treasurer</p>
+                        <p class="text-green-600 font-medium mb-2">Mechanical Engineering</p>
+                        <!-- Email Section -->
+                        <p class="text-sm text-blue-700 flex items-center justify-center gap-1 mt-9">
+                            <a href="mailto:ecorreagallegos@ucsd.edu" class="hover:text-yellow-500 transition-all">ecorreagallegos@ucsd.edu</a>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Alumni Section -->
+    <section id="alumni" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Alumni</h2>
+                <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Alumni Member 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
+                    <img src="assests/board_photos/Cristin_2.jpg" alt="Alumni Member" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-xl font-bold text-blue-900 mb-1">Cristin Huffman</h3>
+                        <p class="text-yellow-600 font-medium mb-2">Former President</p>
+                        <p class="text-green-600 font-medium mb-2">ICAM</p>
+                    </div>
+                </div>
+                <!-- Add more alumni cards as needed -->
+            </div>
+        </div>
+    </section>
+
+
+
 
     <!-- Get Involved Section -->
     <section id="get-involved" class="py-20 bg-blue-900 text-white">
@@ -216,7 +276,7 @@
                         <h3 class="text-xl font-bold mb-4">LinkedIn</h3>
                         <p class="mb-6">Connect with us professionally.</p>
                         <a href="https://www.linkedin.com/company/themed-entertainment-association-ucsd/" 
-                           class="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold px-6 py-2 rounded-full transition-all"
+                           class="inline-block bg-yellow-400 hover:bg-yellow-200 text-blue-900 font-bold px-6 py-2 rounded-full transition-all"
                            target="_blank">
                             Follow Us
                         </a>
@@ -228,9 +288,9 @@
                             <i class="fab fa-instagram text-3xl"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-4">Instagram</h3>
-                        <p class="mb-6">See our latest projects, events, and meetings.</p>
+                        <p class="mb-6">See our latest events, projects, and meetings.</p>
                         <a href="https://www.instagram.com/teaatucsd" 
-                           class="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold px-6 py-2 rounded-full transition-all"
+                           class="inline-block bg-yellow-400 hover:bg-yellow-200 text-blue-900 font-bold px-6 py-2 rounded-full transition-all"
                            target="_blank">
                             Follow Us
                         </a>
@@ -242,9 +302,9 @@
                             <i class="fab fa-discord text-3xl"></i>
                         </div>
                         <h3 class="text-xl font-bold mb-4">Discord</h3>
-                        <p class="mb-6">Join our community stay up to date and to collaborate on projects.</p>
+                        <p class="mb-6">Join our community to stay up to date on events and collaborate on projects.</p>
                         <a href="https://discord.gg/uTvAH4FbKv" 
-                           class="inline-block bg-yellow-400 hover:bg-yellow-300 text-blue-900 font-bold px-6 py-2 rounded-full transition-all"
+                           class="inline-block bg-yellow-400 hover:bg-yellow-200 text-blue-900 font-bold px-6 py-2 rounded-full transition-all"
                            target="_blank">
                             Join Server
                         </a>
@@ -253,7 +313,7 @@
                 
                 <div class="mt-16 text-center">
                     <h3 class="text-2xl font-bold mb-4">Have questions?</h3>
-                    <p class="text-xl mb-6">Reach out to us at <a href="mailto:tea@ucsd.edu" class="text-yellow-400 hover:underline">tea@ucsd.edu</a></p>
+                    <p class="text-xl mb-6">Reach out to us at <a href="mailto:tea@ucsd.edu" class="text-yellow-500 hover:underline">tea@ucsd.edu</a></p>
                 </div>
             </div>
         </div>
@@ -263,7 +323,7 @@
     <footer class="bg-blue-950 text-white py-12">
         <div class="container mx-auto px-6 text-center">
             <div class="mb-8">
-                <h3 class="text-xl font-bold mb-4">TEA at UCSD</h3>
+                <h3 class="text-xl font-bold mb-4">TEA at UC San Diego</h3>
                 <div class="flex justify-center space-x-4 mb-4">
                     <a href="https://www.instagram.com/teaatucsd" class="hover:text-yellow-400" target="_blank"><i class="fab fa-instagram text-2xl"></i></a>
                     <a href="https://discord.gg/uTvAH4FbKv" class="hover:text-yellow-400" target="_blank"><i class="fab fa-discord text-2xl"></i></a>
