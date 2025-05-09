@@ -29,3 +29,13 @@ mdsrc/
 
 ## Deploying
 This site is configured to automatically deploy from the `master` branch. After pushing/merging a change to master it will take 1-5 minutes to deploy to the public facing site. 
+
+git checkout -b "Name" (creates a branch switches you to that branch)
+
+git add -A (adds and updates all files in repo)
+
+git commit -m "comment" (adds everything to a commit)
+
+git push (pushes commit to repo)
+
+git pull master (pulls updates from main)

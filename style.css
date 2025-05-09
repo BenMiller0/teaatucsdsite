@@ -7,7 +7,7 @@ body {
 }
 
 .hero-gradient {
-    background: linear-gradient(135deg, #0055a5 0%, #00a5e5 100%);
+    background: linear-gradient(135deg, #0055a5 30%, #00a5e5 100%);
 }
 
 .card-hover:hover {
@@ -27,6 +27,6 @@ body {
   }
   
   .here-link:hover {
-    color: #FFD700; /* gold when you hover */
+    color: #fbc455; /* gold when you hover */
   }
   
