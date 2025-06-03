@@ -1,4 +1,4 @@
-# 🎢 Themed Entertianment at UC San Diego Website 🌊
+# 🎢 Themed Entertainment at UC San Diego Website 🌊
 Link to site: https://bit.ly/teaatucsd  
 Specific link to gesture control page: https://bit.ly/teaforce
 
