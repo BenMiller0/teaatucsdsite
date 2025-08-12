@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEA @ UCSD | Themed Entertainment Association</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="assests\favcon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="icon" type="image/png" href="assests/favcon.png">
+
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a, #0c4a6e);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -15,21 +29,35 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-4">
-                    <img src="assests/tea_logo.png" alt="TEA Logo" class="h-14 rounded-lg">
+                    <img src="assests/TEA_logo.png" onerror="this.src='https://placehold.co/56x56/0c4a6e/fff?text=TEA+Logo'" alt="TEA Logo" class="h-14 rounded-lg">
                 </div>
                 <div class="hidden md:flex items-center space-x-12">
                     <a href="#home" class="hover:text-yellow-400 transition-all">Home</a>
                     <a href="#about" class="hover:text-yellow-400 transition-all">About</a>
                     <a href="#projects" class="hover:text-yellow-400 transition-all">Projects</a>
                     <a href="#team" class="hover:text-yellow-400 transition-all">Board</a>
+                    <a href="#alumni" class="hover:text-yellow-400 transition-all">Alumni</a>
                     <a href="#get-involved" class="hover:text-yellow-400 transition-all">Get Involved</a>
                 </div>
-                <button class="md:hidden focus:outline-none">
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
                     <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
     </nav>
+    
+    <!-- Mobile Menu Container (hidden by default) -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-blue-900 bg-opacity-95 text-white flex flex-col items-center justify-center space-y-6 md:hidden">
+        <button id="close-menu-button" class="absolute top-6 right-6 text-3xl focus:outline-none">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#home" class="text-3xl font-bold hover:text-yellow-400 transition-all mobile-menu-link">Home</a>
+        <a href="#about" class="text-3xl font-bold hover:text-yellow-400 transition-all mobile-menu-link">About</a>
+        <a href="#projects" class="text-3xl font-bold hover:text-yellow-400 transition-all mobile-menu-link">Projects</a>
+        <a href="#team" class="text-3xl font-bold hover:text-yellow-400 transition-all mobile-menu-link">Board</a>
+        <a href="#alumni" class="text-3xl font-bold hover:text-yellow-400 transition-all mobile-menu-link">Alumni</a>
+        <a href="#get-involved" class="text-3xl font-bold hover:text-yellow-400 transition-all mobile-menu-link">Get Involved</a>
+    </div>
 
     <!-- Hero Section -->
     <section id="home" class="hero-gradient text-white pt-32 pb-3">
@@ -45,8 +73,7 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">About TEA @ UC San Diego</h2>
                 <div class="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div> 
-                  <!-- Image inserted Team here -->
-                <img src="assests/board_photos/Group_4.png" alt="TEA UCSD Team" class="mx-auto mb-2 rounded-lg shadow-lg w-full max-w-md">
+                <img src="assests/GroupAll.jpg" alt="TEA UCSD Team" class="mx-auto mb-2 rounded-lg shadow-lg w-full max-w-md">
             </div>
             <div class="max-w-3xl mx-auto text-center">
                 <p class="text-gray-700 mb-6 text-lg -mt-8">The Themed Entertainment Association at UC San Diego brings together students from all majors to explore the intersection of storytelling, design, and engineering in themed entertainment.</p>
@@ -89,7 +116,7 @@
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-blue-900 mb-2">Interactive Audio Animatronic Encounter</h3>
                         <p class="text-gray-700 mb-4">Talk with our club mascot in audio animatronic form.</p>
-                        <a href="project1" class="text-blue-900 font-semibold hover:text-blue-700 transition-all">Learn More →</a>
+                        <a href="project1/" class="text-blue-900 font-semibold hover:text-blue-700 transition-all">Learn More →</a>
                     </div>
                 </div>
 
@@ -99,7 +126,7 @@
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-blue-900 mb-2">Gesture Controlled Computer Vision Attraction</h3>
                         <p class="text-gray-700 mb-4">Extraction: A Star Wars Interactive Experience</p>
-                        <a href="project2" class="text-blue-900 font-semibold hover:text-blue-700 transition-all">Learn More →</a>
+                        <a href="project2/" class="text-blue-900 font-semibold hover:text-blue-700 transition-all">Learn More →</a>
                     </div>
                 </div>
             </div>
@@ -113,121 +140,9 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Meet the Board</h2>
                 <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
             </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                <!-- Benjamin -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                <img src="assests/board_photos/Ben_2.jpg" alt="Team Member" class="w-full h-64 object-cover">
-                <div class="p-6 text-center">
-                    <h3 class="text-xl font-bold text-blue-900 mb-1">Benjamin Miller</h3>
-                    <p class="text-yellow-600 font-medium mb-2">Co-President</p>
-                    <p class="text-gray-600 font-medium mb-2 whitespace-nowrap">Computer Science</p>
-                    <a href="https://www.linkedin.com/in/benjamin-miller-ucsd/" 
-                        class="text-blue-700 hover:underline block mt-2"
-                        target="_blank" rel="noopener noreferrer">
-                        LinkedIn Profile
-                    </a>
-                </div>
-                </div>
-                <!-- Naomika -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="assests/board_photos/Naomika_1.jpg" alt="Team Member" class="w-full h-64 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Naomika Nadkarni</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Co-President</p>
-                        <p class="text-gray-600 font-medium mb-2">Cognitive Science Design</p>
-                        <a href="https://www.linkedin.com/in/naomika-n-8bb40227b/" 
-                        class="text-blue-700 hover:underline block mt-2"
-                        target="_blank" rel="noopener noreferrer">
-                        LinkedIn Profile
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Ryan -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="assests/board_photos/Ryan_2.jpg" alt="Team Member" class="w-full h-64 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Ryan Young</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Vice President</p>
-                        <p class="text-gray-600 font-medium mb-2">Mechanical Engineering</p>
-                        <a href="https://www.linkedin.com/in/ryan-young-1a9732256/" 
-                        class="text-blue-700 hover:underline block mt-2"
-                        target="_blank" rel="noopener noreferrer">
-                        LinkedIn Profile
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Kaitlin C -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="assests/board_photos/Kaitlin_C_1.jpg" alt="Team Member" class="w-full h-64 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Kaitlin Calimbahin</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Technical Director</p>
-                        <p class="text-gray-600 font-medium mb-2">Electrical Engineering</p>
-                        <a href="https://www.linkedin.com/in/kaitlin-calimbahin/" 
-                        class="text-blue-700 hover:underline block mt-2"
-                        target="_blank" rel="noopener noreferrer">
-                        LinkedIn Profile
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Kaitlin B -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="assests/board_photos/Kaitlin_B_1.jpg" alt="Team Member" class="w-full h-64 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Kaitlin Bartone</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Marketing and Outreach Director</p>
-                        <p class="text-gray-600 font-medium mb-2">Psychology</p>
-                        <a href="https://www.linkedin.com/in/kaitlin-bartone-91335635b/" 
-                        class="text-blue-700 hover:underline block mt-2"
-                        target="_blank" rel="noopener noreferrer">
-                        LinkedIn Profile
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Becca Behl -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="assests/board_photos/Becca_1.jpg" alt="Team Member" class="w-full h-64 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Becca Behl</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Competition Coordinator</p>
-                        <p class="text-gray-600 font-medium mb-2">Economics</p>
-                        <a href="https://www.linkedin.com/in/rebecca-behl-85413b34b/" 
-                        class="text-blue-700 hover:underline block mt-2"
-                        target="_blank" rel="noopener noreferrer">
-                        LinkedIn Profile
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Sophia  -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="assests/board_photos/Sophia_1.jpg" alt="Team Member" class="w-full h-64 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Sophia Ramirez</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Events Coordinator</p>
-                        <p class="text-gray-600 font-medium mb-2">Cognitive Science Design & ICAM</p>
-                        <a href="https://www.linkedin.com/in/sophia-ramirez-/" 
-                        class="text-blue-700 hover:underline block mt-2"
-                        target="_blank" rel="noopener noreferrer">
-                        LinkedIn Profile
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Eli -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="assests/board_photos/Eli_2.jpg" alt="Team Member" class="w-full h-64 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Elisa Correa</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Treasurer</p>
-                        <p class="text-gray-600 font-medium mb-2">Mechanical Engineering</p>
-                    </div>
-                </div>
+            <!-- This is the container where the board members will be dynamically loaded -->
+            <div id="board-members-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <p class="col-span-full text-center text-gray-500">Loading board members...</p>
             </div>
         </div>
     </section>
@@ -239,29 +154,12 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Alumni</h2>
                 <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
             </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
-                <!-- Crisitin -->
-                <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                    <img src="assests/board_photos/Cristin_2.jpg" alt="Alumni Member" class="w-full h-64 object-cover">
-                    <div class="p-6 text-center">
-                        <h3 class="text-xl font-bold text-blue-900 mb-1">Cristin Huffman</h3>
-                        <p class="text-yellow-600 font-medium mb-2">Former President</p>
-                        <p class="text-gray-600 font-medium mb-2">ICAM</p>
-                        <a href="https://www.linkedin.com/in/cristin-huffman/" 
-                        class="text-blue-700 hover:underline block mt-2"
-                        target="_blank" rel="noopener noreferrer">
-                        LinkedIn Profile
-                    </a>
-                    </div>
-                </div>
-                <!-- Add more alumni cards as needed -->
+            <!-- This is the container where the alumni will be dynamically loaded -->
+            <div id="alumni-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+                <p class="col-span-full text-center text-gray-500">Loading alumni...</p>
             </div>
         </div>
     </section>
-
-
-
 
     <!-- Get Involved Section -->
     <section id="get-involved" class="py-20 bg-blue-900 text-white">
@@ -337,22 +235,143 @@
                 <p>tea@ucsd.edu</p>
             </div>
             <div class="border-t border-blue-800 pt-8">
-                <p>2025 TEA at UC San Diego.</p>
+                <p>&copy; 2025 TEA @ UCSD. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+    <!-- Custom Modal/Message Box -->
+    <div id="modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+        <div class="bg-white p-6 rounded-lg shadow-lg max-w-sm w-full mx-4">
+            <h3 class="text-xl font-bold mb-4 text-blue-900">Mobile Menu</h3>
+            <p class="text-gray-700 mb-6">Mobile menu functionality is not yet implemented in this example.</p>
+            <button id="close-modal-button" class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition-all">Close</button>
+        </div>
+    </div>
     
     <script>
+        (async () => {
+            const boardMembers = [
+                {
+                    name: "Naomika Nadkarni",
+                    title: "Co-President",
+                    major: "Cognitive Science Design",
+                    image: "assests/Board_photos/Naomika.jpg",
+                    linkedin: "https://www.linkedin.com/in/naomika-n-8bb40227b/"
+                },
+                {
+                    name: "Ryan Young",
+                    title: "Co-Vice President",
+                    major: "Mechanical Engineering",
+                    image: "assests/Board_photos/Ryan.jpg",
+                    linkedin: "https://www.linkedin.com/in/ryan-young-1a9732256/"
+                },
+                {
+                    name: "Benjamin Miller",
+                    title: "Co-Vice President [Projects]",
+                    major: "Computer Science",
+                    image: "assests/Board_photos/Ben.jpg",
+                    linkedin: "https://www.linkedin.com/in/benjamin-miller-ucsd/"
+                },
+                {
+                    name: "Kaitlin Bartone",
+                    title: "Marketing and Outreach Director",
+                    major: "Psychology",
+                    image: "assests/Board_photos/Kaitlin_B.jpg",
+                    linkedin: "https://www.linkedin.com/in/kaitlin-bartone-91335635b/"
+                },
+                {
+                    name: "Becca Behl",
+                    title: "Competition Coordinator",
+                    major: "Economics",
+                    image: "assests/Board_photos/Becca.jpg",
+                    linkedin: "https://www.linkedin.com/in/rebecca-behl-85413b34b/"
+                },
+                {
+                    name: "Sophia Ramirez",
+                    title: "Events Coordinator",
+                    major: "Cognitive Science Design & ICAM",
+                    image: "assests/Board_photos/Sophia.jpg",
+                    linkedin: "https://www.linkedin.com/in/sophia-ramirez-/"
+                },
+                {
+                    name: "Elisa Correa",
+                    title: "Treasurer",
+                    major: "Mechanical Engineering",
+                    image: "assests/Board_photos/Eli.jpg",
+                    linkedin: null 
+                },
+                {
+                    name: "Kaitlin Calimbahin",
+                    title: "Technical Director",
+                    major: "Electrical Engineering",
+                    image: "assests/Board_photos/Kaitlin_C.jpg",
+                    linkedin: "https://www.linkedin.com/in/kaitlin-calimbahin/"
+                }
+            ];
+
+            const alumni = [
+                {
+                    name: "Cristin Huffman",
+                    title: "Former President",
+                    major: "ICAM",
+                    image: "assests/Board_photos/Cristin.jpg",
+                    linkedin: "https://www.linkedin.com/in/cristin-huffman/"
+                },
+            ];
+
+            // Function to render members into a specified container
+            const renderMembers = (containerId, membersData) => {
+                const container = document.getElementById(containerId);
+                // Clear the loading message
+                container.innerHTML = ''; 
+
+                membersData.forEach(member => {
+                    const memberCard = `
+                        <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
+                            <img src="${member.image}" alt="${member.name}" class="w-full h-64 object-cover">
+                            <div class="p-6 text-center">
+                                <h3 class="text-xl font-bold text-blue-900 mb-1">${member.name}</h3>
+                                <p class="text-yellow-600 font-medium mb-2">${member.title}</p>
+                                <p class="text-gray-600 font-medium mb-2 whitespace-nowrap">${member.major}</p>
+                                ${member.linkedin ? `<a href="${member.linkedin}" class="text-blue-700 hover:underline block mt-2" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>` : ''}
+                            </div>
+                        </div>
+                    `;
+                    container.innerHTML += memberCard;
+                });
+            };
+
+            // Render the board and alumni members
+            renderMembers('board-members-container', boardMembers);
+            renderMembers('alumni-container', alumni);
+        })();
+
+
+        // --- Existing scripts from user, with minor fixes ---
+
         // Mobile Menu Toggle
-        const mobileMenuButton = document.querySelector('nav button');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const closeModalButton = document.getElementById('close-modal-button');
+        const closeMenuButton = document.getElementById('close-menu-button');
+        const modal = document.getElementById('modal');
+
         mobileMenuButton.addEventListener('click', () => {
-            alert('Mobile menu would open here in a full implementation');
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
         });
         
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
+                // Close mobile menu if open
+                mobileMenu.classList.add('hidden');
+                
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
