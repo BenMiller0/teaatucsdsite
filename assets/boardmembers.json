@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Naomika Nadkarni",
+        "title": "President",
+        "major": "Cognitive Science Design",
+        "image": "assets/board_photos/Naomika.jpg",
+        "linkedin": "https://www.linkedin.com/in/naomika-n-8bb40227b/"
+    },
+    {
+        "name": "Ryan Young",
+        "title": "Co-Vice President",
+        "major": "Mechanical Engineering",
+        "image": "assets/board_photos/Ryan.jpg",
+        "linkedin": "https://www.linkedin.com/in/ryan-young-1a9732256/"
+    },
+    {
+        "name": "Benjamin Miller",
+        "title": "Co-Vice President - Projects",
+        "major": "Computer Science",
+        "image": "assets/board_photos/Ben.jpg",
+        "linkedin": "https://www.linkedin.com/in/benjamin-miller-ucsd/"
+    },
+    {
+        "name": "Kaitlin Bartone",
+        "title": "Marketing and Outreach Director",
+        "major": "Psychology",
+        "image": "assets/board_photos/Kaitlin_B.jpg",
+        "linkedin": "https://www.linkedin.com/in/kaitlin-bartone-91335635b/"
+    },
+    {
+        "name": "Becca Behl",
+        "title": "Competition Coordinator",
+        "major": "Economics",
+        "image": "assets/board_photos/Becca.jpg",
+        "linkedin": "https://www.linkedin.com/in/rebecca-behl-85413b34b/"
+    },
+    {
+        "name": "Sophia Ramirez",
+        "title": "Events Coordinator",
+        "major": "Cognitive Science Design & ICAM",
+        "image": "assets/board_photos/Sophia.jpg",
+        "linkedin": "https://www.linkedin.com/in/sophia-ramirez-/"
+    },
+    {
+        "name": "Elisa Correa",
+        "title": "Treasurer",
+        "major": "Mechanical Engineering",
+        "image": "assets/board_photos/Eli.jpg",
+        "linkedin": null 
+    },
+    {
+        "name": "Kaitlin Calimbahin",
+        "title": "Technical Director",
+        "major": "Electrical Engineering",
+        "image": "assets/board_photos/Kaitlin_C.jpg",
+        "linkedin": "https://www.linkedin.com/in/kaitlin-calimbahin/"
+    }
+]

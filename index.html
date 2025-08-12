@@ -7,22 +7,8 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Corrected path for favicon -->
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/favcon.png" onerror="this.href='https://placehold.co/32x32/0c4a6e/fff?text=TEA'">
-
-    <style>
-        .hero-gradient {
-            background: linear-gradient(135deg, #1e3a8a, #0c4a6e);
-        }
-        .card-hover {
-            transition: all 0.3s ease;
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        }
-    </style>
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
@@ -30,7 +16,6 @@
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-4">
-                    <!-- Corrected image path -->
                     <img src="assets/TEA_logo.png" onerror="this.src='https://placehold.co/56x56/0c4a6e/fff?text=TEA+Logo'" alt="TEA Logo" class="h-14 rounded-lg">
                 </div>
                 <div class="hidden md:flex items-center space-x-12">
@@ -75,7 +60,6 @@
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">About TEA @ UC San Diego</h2>
                 <div class="w-24 h-1 bg-yellow-400 mx-auto mb-6"></div> 
-                <!-- Corrected image path -->
                 <img src="assets/GroupAll.jpg" onerror="this.src='https://placehold.co/600x400/0c4a6e/fff?text=Team+Photo'" alt="TEA UCSD Team" class="mx-auto mb-2 rounded-lg shadow-lg w-full max-w-md">
             </div>
             <div class="max-w-3xl mx-auto text-center">
@@ -115,8 +99,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Project 1 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-all card-hover">
-                    <!-- Corrected image path -->
-                    <img src="assets/Taro.png" onerror="this.src='https://placehold.co/600x400/0c4a6e/fff?text=Project+Taro'" alt="Tabling with Taro" class="w-full h-48 object-cover">
+                    <img src="project1/Taro.png" onerror="this.src='https://placehold.co/600x400/0c4a6e/fff?text=Project+Taro'" alt="Tabling with Taro" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-blue-900 mb-2">Interactive Audio Animatronic Encounter</h3>
                         <p class="text-gray-700 mb-4">Talk with our club mascot in audio animatronic form.</p>
@@ -126,8 +109,7 @@
 
                 <!-- Project 2 -->
                 <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-all card-hover">
-                    <!-- Corrected image path -->
-                    <img src="assets/GEST.png" onerror="this.src='https://placehold.co/600x400/0c4a6e/fff?text=Project+GEST'" alt="Project GEST" class="w-full h-48 object-cover">
+                    <img src="project2/GEST.png" onerror="this.src='https://placehold.co/600x400/0c4a6e/fff?text=Project+GEST'" alt="Project GEST" class="w-full h-48 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold text-blue-900 mb-2">Gesture Controlled Computer Vision Attraction</h3>
                         <p class="text-gray-700 mb-4">Extraction: A Star Wars Interactive Experience</p>
@@ -145,7 +127,6 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Meet the Board</h2>
                 <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
             </div>
-            <!-- This is the container where the board members will be dynamically loaded -->
             <div id="board-members-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 <p class="col-span-full text-center text-gray-500">Loading board members...</p>
             </div>
@@ -159,7 +140,6 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-4">Alumni</h2>
                 <div class="w-24 h-1 bg-yellow-400 mx-auto"></div>
             </div>
-            <!-- This is the container where the alumni will be dynamically loaded -->
             <div id="alumni-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 <p class="col-span-full text-center text-gray-500">Loading alumni...</p>
             </div>
@@ -245,134 +225,6 @@
         </div>
     </footer>
 
-    <!-- Script to handle dynamic member rendering -->
-    <script>
-        (async () => {
-            const boardMembers = [
-                {
-                    name: "Naomika Nadkarni",
-                    title: "Co-President",
-                    major: "Cognitive Science Design",
-                    // Corrected image path
-                    image: "assets/board_photos/Naomika.jpg",
-                    linkedin: "https://www.linkedin.com/in/naomika-n-8bb40227b/"
-                },
-                {
-                    name: "Ryan Young",
-                    title: "Co-Vice President",
-                    major: "Mechanical Engineering",
-                    // Corrected image path
-                    image: "assets/board_photos/Ryan.jpg",
-                    linkedin: "https://www.linkedin.com/in/ryan-young-1a9732256/"
-                },
-                {
-                    name: "Benjamin Miller",
-                    title: "Co-Vice President [Projects]",
-                    major: "Computer Science",
-                    // Corrected image path
-                    image: "assets/board_photos/Ben.jpg",
-                    linkedin: "https://www.linkedin.com/in/benjamin-miller-ucsd/"
-                },
-                {
-                    name: "Kaitlin Bartone",
-                    title: "Marketing and Outreach Director",
-                    major: "Psychology",
-                    // Corrected image path
-                    image: "assets/board_photos/Kaitlin_B.jpg",
-                    linkedin: "https://www.linkedin.com/in/kaitlin-bartone-91335635b/"
-                },
-                {
-                    name: "Becca Behl",
-                    title: "Competition Coordinator",
-                    major: "Economics",
-                    // Corrected image path
-                    image: "assets/board_photos/Becca.jpg",
-                    linkedin: "https://www.linkedin.com/in/rebecca-behl-85413b34b/"
-                },
-                {
-                    name: "Sophia Ramirez",
-                    title: "Events Coordinator",
-                    major: "Cognitive Science Design & ICAM",
-                    // Corrected image path
-                    image: "assets/board_photos/Sophia.jpg",
-                    linkedin: "https://www.linkedin.com/in/sophia-ramirez-/"
-                },
-                {
-                    name: "Elisa Correa",
-                    title: "Treasurer",
-                    major: "Mechanical Engineering",
-                    // Corrected image path
-                    image: "assets/board_photos/Eli.jpg",
-                    linkedin: null 
-                },
-                {
-                    name: "Kaitlin Calimbahin",
-                    title: "Technical Director",
-                    major: "Electrical Engineering",
-                    // Corrected image path
-                    image: "assets/board_photos/Kaitlin_C.jpg",
-                    linkedin: "https://www.linkedin.com/in/kaitlin-calimbahin/"
-                }
-            ];
-
-            const alumni = [
-                {
-                    name: "Cristin Huffman",
-                    title: "Former President",
-                    major: "ICAM",
-                    // Corrected image path
-                    image: "assets/board_photos/Cristin.jpg",
-                    linkedin: "https://www.linkedin.com/in/cristin-huffman/"
-                },
-            ];
-
-            // Function to render members into a specified container
-            const renderMembers = (containerId, membersData) => {
-                const container = document.getElementById(containerId);
-                // Clear the loading message
-                container.innerHTML = ''; 
-
-                membersData.forEach(member => {
-                    const memberCard = `
-                        <div class="bg-white rounded-lg overflow-hidden shadow-md transition-all card-hover">
-                            <!-- Using a placeholder image with onerror to prevent broken images -->
-                            <img src="${member.image}" onerror="this.src='https://placehold.co/600x400/0c4a6e/fff?text=${member.name.replace(' ', '+')}'" alt="${member.name}" class="w-full h-64 object-cover">
-                            <div class="p-6 text-center">
-                                <h3 class="text-xl font-bold text-blue-900 mb-1">${member.name}</h3>
-                                <p class="text-yellow-600 font-medium mb-2">${member.title}</p>
-                                <p class="text-gray-600 font-medium mb-2 whitespace-nowrap">${member.major}</p>
-                                ${member.linkedin ? `<a href="${member.linkedin}" class="text-blue-700 hover:underline block mt-2" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>` : ''}
-                            </div>
-                        </div>
-                    `;
-                    container.innerHTML += memberCard;
-                });
-            };
-
-            // Render the board and alumni members
-            renderMembers('board-members-container', boardMembers);
-            renderMembers('alumni-container', alumni);
-        })();
-
-        // --- Mobile Menu Scripts ---
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const closeMenuButton = document.getElementById('close-menu-button');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.remove('hidden');
-        });
-
-        closeMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.add('hidden');
-        });
-        
-        // This makes sure the mobile menu closes when a link is clicked
-        document.querySelectorAll('.mobile-menu-link').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

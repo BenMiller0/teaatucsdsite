@@ -7,20 +7,21 @@ This repository is contians of the source code for the Themed Entertainment Asso
 # Documentation
 
 ## Site Layout
-fix this I coppied this from another project - ben
 ```text
-mdsrc/
-├── content/              # Content and data
-│   ├── components/       # Reusable content components
-│   ├── data/             # Site-wide data files
-│   └── pages/            # Main site pages (.njk templates)
-├── layouts/              # Page templates
-│   └── base.njk          # Base layout template
-└── assets/               # Static assets
-    ├── js/               # JavaScript modules
-    ├── scss/             # SASS stylesheets
-    ├── images/           # Site images
-    └── favicon/          # Favicon files
+./
+├── Assets/               # Content and data
+│   ├── boardphots/       # Board/alumni pictures
+│   ├── favcon.png        # Tab icon
+│   ├── GroupAll.png      # TEA Group picture
+│   ├── TEALogo.png       # TEA Logo
+│   ├── alumni.json       # Edit to change alumni list on site
+│   └── alumni.json       # Edit to change board member list on site
+├── project1/             # Project 1 Page/Data
+├── project2/             # Project 2 Page/Data
+├── index.html            # Homepage of site
+├── script.js             # Script that does action such as dynamically load board members from JSON file
+├── style.css             # CSS Styling of site
+└── README.MD             # What your reading right now!
 ```
 
 
