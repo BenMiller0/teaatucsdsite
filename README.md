@@ -18,6 +18,7 @@ This repository is contians of the source code for the Themed Entertainment Asso
 │   └── alumni.json       # Edit to change board member list on site
 ├── project1/             # Project 1 Page/Data
 ├── project2/             # Project 2 Page/Data
+├── project3/             # Project 2 Data (this one does not have a page just links to the Haunted Maze IG)
 ├── index.html            # Homepage of site
 ├── script.js             # Script that does action such as dynamically load board members from JSON file
 ├── style.css             # CSS Styling of site
