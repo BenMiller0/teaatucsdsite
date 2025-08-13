@@ -1,4 +1,4 @@
-# 🎢 Themed Entertainment at UC San Diego Website 🌊
+# 🎢 Themed Entertainment at UC San Diego Website 🎢
 Link to site: https://bit.ly/teaatucsd  
 Specific link to gesture control page: https://bit.ly/teaforce
 
@@ -27,16 +27,19 @@ This repository is contians of the source code for the Themed Entertainment Asso
 
 
 ## Editing the site
+1. Clone the repo using `git clone` or github desktop
 
-git checkout -b "Name" (creates a branch switches you to that branch)
+2. `git checkout -b "Name"`  creates a branch switches you to that branch 
 
-git add -A (adds and updates all files in repo)
+3. Make changes to site using editor (e.i. VS Code)
 
-git commit -m "comment" (adds everything to a commit)
+4. `git add -A`  adds and updates all files in repo 
 
-git push (pushes commit to repo)
+5. `git commit -m "comment"`  adds everything to a commit 
 
-git pull master (pulls updates from main)
+6. `git push` pushes commit to remote repo
+
+7. Open pull request
 
 ## Deploying
 This site is configured to automatically deploy from the `master` branch. After pushing/merging a change to master it will take 1-5 minutes to deploy to the public facing site. 
