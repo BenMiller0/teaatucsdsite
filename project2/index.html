@@ -3,116 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Force in Your Hands | TEA @ UCSD</title>
+    <title>Extraction: A Star Wars Experience | TEA @ UCSD</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" type="image/png" href="../assets/favcon.png">
+    
+    <!-- Star Wars Theme -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+        
+        body {
+            font-family: 'Pathway Gothic One', sans-serif;
+            background: #000 url('https://assets.codepen.io/557388/star-wars-bg.jpg') center/cover;
+            color: #ffe81f;
+            letter-spacing: 1px;
+        }
+        
+        .sw-nav {
+            background: linear-gradient(to bottom, #000 0%, rgba(0,0,0,0.7) 100%);
+            border-bottom: 1px solid #333;
+        }
+        
+        .sw-btn {
+            background: #000;
+            border: 1px solid #ffe81f;
+            transition: all 0.3s ease;
+        }
+        
+        .sw-btn:hover {
+            background: #ffe81f;
+            color: #000;
+            transform: translateY(-2px);
+            box-shadow: 0 0 15px #ffe81f;
+        }
+        
+        .sw-divider {
+            height: 2px;
+            background: linear-gradient(to right, transparent, #ffe81f, transparent);
+        }
+    </style>
 </head>
-<body class="bg-black text-white">
-
-    <body class="bg-gray-50">
+<body class="bg-black text-yellow-400">
     <!-- Navigation -->
-    <nav class="bg-gradient-to-b from-black via-gray-900">
+    <nav class="sw-nav text-yellow-400 shadow-lg fixed w-full z-50">
         <div class="container mx-auto px-6 py-3">
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-4">
-                    <img src="../assets/TEA_logo.png" onerror="this.src='https://placehold.co/56x56/0c4a6e/fff?text=TEA+Logo'" alt="TEA Logo" class="h-14 rounded-lg">
+                    <img src="../assets/TEA_logo.png" 
+                         onerror="this.src='https://placehold.co/56x56/000/ffe81f?text=TEA+Logo'" 
+                         alt="TEA Logo" 
+                         class="h-14 rounded-lg border border-yellow-400">
                 </div>
-                <div class="hidden md:flex items-center space-x-12">
-                    <a href="../#home" class="hover:text-yellow-400 transition-all">Home</a>
-                    <a href="../#about" class="hover:text-yellow-400 transition-all">About</a>
-                    <a href="../#projects" class="hover:text-yellow-400 transition-all">Projects</a>
-                    <a href="../#team" class="hover:text-yellow-400 transition-all">Board</a>
-                    <a href="../#alumni" class="hover:text-yellow-400 transition-all">Alumni</a>
-                    <a href="../#get-involved" class="hover:text-yellow-400 transition-all">Get Involved</a>
+                <div class="hidden md:flex items-center space-x-8 text-lg">
+                    <a href="../#about" class="hover:text-white transition-all">About</a>
+                    <a href="../#projects" class="hover:text-white transition-all">Projects</a>
+                    <a href="../#team" class="hover:text-white transition-all">Board</a>
+                    <a href="../#alumni" class="hover:text-white transition-all">Alumni</a>
+                    <a href="../#get-involved" class="hover:text-white transition-all">Get Involved</a>
                 </div>
-                <button id="mobile-menu-button" class="md:hidden focus:outline-none">
-                    <i class="fas fa-bars text-2xl"></i>
+                <button id="mobile-menu-button" class="md:hidden focus:outline-none text-2xl">
+                    <i class="fas fa-bars"></i>
                 </button>
             </div>
         </div>
     </nav>
 
-    <!-- Mobile Menu Container (hidden by default) -->
-    <div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-blue-900 bg-opacity-95 text-white flex flex-col items-center justify-center space-y-6 md:hidden">
-        <button id="close-menu-button" class="absolute top-6 right-6 text-3xl focus:outline-none">
-            <i class="fas fa-times"></i>
-        </button>
-        <a href="#home" class="text-3xl font-bold hover:text-yellow-400 transition-all mobile-menu-link">Home</a>
-        <a href="#about" class="text-3xl font-bold hover:text-yellow-400 transition-all mobile-menu-link">About</a>
-        <a href="#projects" class="text-3xl font-bold hover:text-yellow-400 transition-all mobile-menu-link">Projects</a>
-        <a href="#team" class="text-3xl font-bold hover:text-yellow-400 transition-all mobile-menu-link">Board</a>
-        <a href="#alumni" class="text-3xl font-bold hover:text-yellow-400 transition-all mobile-menu-link">Alumni</a>
-        <a href="#get-involved" class="text-3xl font-bold hover:text-yellow-400 transition-all mobile-menu-link">Get Involved</a>
-    </div>
-
     <!-- Hero Section -->
-    <section class="bg-gradient-to-b from-black via-gray-900 to-black text-yellow-400 pt-32 pb-20 text-center">
+    <section class="pt-32 pb-20 text-center" style="text-shadow: 0 0 10px #ffe81f;">
         <div class="container mx-auto px-6">
-            <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Extraction</h1>
-            <h2 class="text-2xl italic font-light mb-6">A Star Wars Interactive Experience</h2>
-            <h2 class="text-2xl italic font-light mb-6">Coming 2026.</h2>
-            <p class="text-lg max-w-2xl mx-auto">Wield the Force without touching a thing. Use intuitive, real-time gesture controls powered by machine learning and immersive technology to move objects and save the galaxy.</p>
+            <h1 class="text-5xl md:text-7xl font-bold mb-4 uppercase">Extraction</h1>
+            <h2 class="text-2xl md:text-3xl italic mb-6">A Star Wars Interactive Experience</h2>
+            <h3 class="text-xl md:text-2xl mb-8 tracking-widest">Coming 2026</h3>
+            <div class="sw-divider w-1/2 mx-auto my-8"></div>
+            <p class="text-lg max-w-2xl mx-auto leading-relaxed">
+                Wield the Force without touching a thing. Use intuitive, real-time gesture controls powered by machine learning 
+                to move objects and save the galaxy.
+            </p>
         </div>
     </section>
 
-    <section class="blackpy-12 text-center">
+    <!-- GitHub Section -->
+    <section class="py-16 bg-black bg-opacity-70 text-center">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-yellow-400 mb-4">View the Project on GitHub</h2>
-            <p class="text-gray-300 mb-6">Check out the code, contribute, or explore our development process.</p>
+            <h2 class="text-3xl font-bold mb-4">View the Project on GitHub</h2>
+            <p class="text-gray-300 mb-6 max-w-2xl mx-auto">Check out the code, contribute, or explore our development process.</p>
             <a href="https://github.com/BenMiller0/Computer-Vision-Gesture-Response-System" 
                target="_blank" 
-               class="inline-flex items-center bg-yellow-400 text-black font-bold px-6 py-3 rounded-full hover:bg-white transition-all">
+               class="sw-btn inline-flex items-center px-8 py-3 rounded-full font-bold">
                 <i class="fab fa-github text-2xl mr-3"></i>
                 Visit Project GitHub
             </a>
         </div>
     </section>
 
-    <!-- Project Description -->
-    <section class="py-20 bg-black">
-        <div class="container mx-auto px-6 max-w-4xl">
-            <div class="mb-10 text-center">
-                <h2 class="text-4xl font-bold text-yellow-400 mb-6">Project Overview</h2>
-                <div class="w-24 h-1 bg-yellow-400 mx-auto mb-8"></div>
-                <p class="text-gray-300 text-lg leading-relaxed">
-                    Using Raspberry Pi technology and lightweight machine learning models, 
-                    this project introduces intuitive computer vision gesture-based interactions for attractions. 
-                    Guests control elements of the experience with simple hand motions, enhancing immersion 
-                    and creating an unforgettable Star Wars-inspired journey.
+    <!-- Project Details -->
+    <section class="py-20 bg-black bg-opacity-70">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 uppercase">Project Overview</h2>
+                <div class="sw-divider w-1/3 mx-auto my-8"></div>
+                <p class="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+                    Using Raspberry Pi technology and lightweight machine learning models, this project introduces intuitive 
+                    computer vision gesture-based interactions for attractions. Guests control elements of the experience 
+                    with simple hand motions, enhancing immersion and creating an unforgettable Star Wars-inspired journey.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 mt-12">
-                <div>
-                    <img src="GESTConceptArt.jpg" alt="Gesture Control Image" class="rounded-lg shadow-2xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="border-2 border-yellow-400 rounded-lg overflow-hidden">
+                    <img src="GESTConceptArt.jpg" 
+                         onerror="this.src='https://placehold.co/800x600/000/ffe81f?text=Concept+Art'" 
+                         alt="Gesture Control Concept" 
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
                 </div>
-                <div class="flex flex-col justify-center">
-                    <h3 class="text-3xl font-bold text-yellow-400 mb-5">Key Features</h3>
-                    <ul class="list-disc list-inside text-gray-300 space-y-3">
-                        <li>Real-time Computer Vision gesture detection</li>
-                        <li>Highly optimized machine learning model</li>
-                        <li>Control lighting, sound, and animatronic features</li>
-                        <li>Seamless themed integration for maximum immersion</li>
-                        <li>Engaging storytelling with live actors</li>
+                <div>
+                    <h3 class="text-3xl font-bold mb-6 uppercase">Key Features</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-3">⚫</span>
+                            <span>Real-time Computer Vision gesture detection</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-3">⚫</span>
+                            <span>Highly optimized machine learning model</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-3">⚫</span>
+                            <span>Control lighting, sound, and animatronic features</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-3">⚫</span>
+                            <span>Seamless themed integration for maximum immersion</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-yellow-400 mr-3">⚫</span>
+                            <span>Engaging storytelling with live actors</span>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Back to Projects Button -->
-    <div class="text-center py-10">
-        <a href="../index.html#projects" class="inline-block bg-yellow-400 text-black hover:bg-white font-bold px-6 py-3 rounded-full transition-all">
-            ← Back to Home
+    <!-- Back Button -->
+    <div class="text-center py-16 bg-black bg-opacity-80">
+        <a href="../index.html#projects" 
+           class="sw-btn inline-flex items-center px-8 py-3 rounded-full font-bold">
+            <i class="fas fa-arrow-left mr-2"></i>
+            Back to Projects
         </a>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-black text-yellow-400 text-center py-6">
-        <p class="text-sm">&copy; 2025 TEA @ UCSD. All rights reserved.</p>
-    </footer>
-
+    <script src="../script.js"></script>
 </body>
 </html>
