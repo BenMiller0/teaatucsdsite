@@ -8,7 +8,6 @@ This repository is contians of the source code for the Themed Entertainment Asso
 
 ## Site Layout
 ```text
-./
 ├── Assets/               # Content and data
 │   ├── boardphots/       # Board/alumni pictures
 │   ├── favcon.png        # Tab icon
