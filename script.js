@@ -71,6 +71,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load member data
     loadMemberData();
+
+    // ✅ NEW: Scroll to section from ?section= query param
+    const params = new URLSearchParams(window.location.search);
+    const section = params.get('section');
+    if (section) {
+        const target = document.getElementById(section) || document.querySelector(`#${CSS.escape(section)}`);
+        if (target) {
+            const headerOffset = 80; // adjust if navbar height changes
+            const elementTop = target.getBoundingClientRect().top + window.pageYOffset;
+            const offsetTop = Math.max(elementTop - headerOffset, 0);
+
+            window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+
+            // Optional: update URL to show #section without reload
+            history.replaceState(null, '', `#${section}`);
+        }
+    }
 });
 
 // Function to render members into a specified container
